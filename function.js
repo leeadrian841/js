@@ -1,3 +1,9 @@
+// long1
+
+// long2
+
+// long3
+
 // short1
 function maxofTwoNumbers (a, b) {
   if (a > b) {
@@ -21,3 +27,21 @@ function maxofThree (a, b, c) {
 }
 
 maxofThree(4, 1, 7)
+
+// short3
+
+// short4
+
+// short5
+
+// short6
+function reverseString (str) {
+  var rev = str.split('').reverse().join('')
+  return rev
+}
+
+reverseString('jag testar')
+
+// short7
+
+// short8

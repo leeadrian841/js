@@ -1,21 +1,22 @@
+// short1
 function maxofTwoNumbers (a, b) {
   if (a > b) {
-    console.log('The bigger number is ' + a)
+    return a
   } else {
-    console.log('The bigger number is ' + b)
+    return b
   }
 }
 
 maxofTwoNumbers(7, 5)
 
-
+// short2
 function maxofThree (a, b, c) {
   if ((a > b) && (a > c)) {
-    console.log('The biggest number is ' + a)
+    return a
   } else if (b > c) {
-    console.log('The biggest number is ' + b)
+    return b
   } else {
-    console.log('The biggest number is ' + c)
+    return c
   }
 }
 

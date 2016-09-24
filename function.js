@@ -1,9 +1,27 @@
 // long1
+var words = ["hello", "what", "is", "up", "dude"]
+
 function lengths(){
-
+  var arrlength = []
+  for (var i = 0; i < words.length; i++){
+    var single = words[i].split(", ")
+    for (var j = 0; j < single.length; j++){
+      var count = single[j].length
+      arrlength.push(count)
+    }
+  }
+console.log(arrlength)
 }
-// long2
 
+lengths(words)
+
+// long2
+function transmogrifier(a, b, c){
+  var result = Math.pow((a * b), c)
+  console.log(result)
+}
+
+transmogrifier(5, 3, 2)
 
 // long3
 function wordReverse(str){
@@ -15,7 +33,7 @@ wordReverse("Now I know what a TV dinner feels like")
 wordReverse("Put Hans back on the line")
 
 // short1
-function maxofTwoNumbers (a, b) {
+function maxofTwoNumbers(a, b){
   if (a > b) {
     return a
   } else {
@@ -42,7 +60,7 @@ maxofThree(4, 1, 7)
 var isVowel = false
 var vowels = ['a', 'e', 'i', 'o', 'u']
 
-function isCharacterAVowel (str) {
+function isCharacterAVowel(str){
   for (var i = 0; i < vowels.length; i++) {
     console.log()
     if () {
@@ -61,7 +79,7 @@ isCharacterAVowel( 's' )
 // short5
 
 // short6
-function reverseString (str) {
+function reverseString(str){
   var rev = str.split('').reverse().join('')
   return rev
 }
@@ -69,18 +87,27 @@ function reverseString (str) {
 reverseString('jag testar')
 
 // short7
-function findLongestWords (arr) {
+var words = ["hello", "what", "is", "up", "dude"]
+
+function findLongestWords(arr){
   var longestWordsLength = 0
-  for (var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; i++){
     arr[i]
     arr[i].length
-    if ( longestWordsLength < arr[i].length ) {
+    if (longestWordsLength < arr[i].length){
       longestWordsLength = arr[i].length
     }
   }
   return longestWordsLength
 }
 
-findLongestWords()
+findLongestWords(words)
 
 // short8
+var words = ["hello", "what", "is", "up", "dude"]
+
+function filterLongWords(){
+
+}
+
+filterLongWords()

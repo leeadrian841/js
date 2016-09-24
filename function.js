@@ -10,7 +10,7 @@ function lengths(){
       arrlength.push(count)
     }
   }
-console.log(arrlength)
+ return arrlength
 }
 
 lengths(words)
@@ -18,10 +18,12 @@ lengths(words)
 // long2
 function transmogrifier(a, b, c){
   var result = Math.pow((a * b), c)
-  console.log(result)
+  return result
 }
 
 transmogrifier(5, 3, 2)
+transmogrifier(13, 12, 5)
+transmogrifier(42, 13, 7)
 
 // long3
 function wordReverse(str){

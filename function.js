@@ -107,9 +107,17 @@ function findLongestWords(arr){
 findLongestWords(words)
 
 // short8
+var result = false
 var words = ["hello", "what", "is", "up", "dude"]
 
-function filterLongWords(){
-
+function filterLongWords(arr,x){
+  for (var i = 0; i < arr.length; i++){
+    if(arr[i].length > x){
+      return arr[i]
+    }else{
+      result = false
+      return result
+    }
+  }
 }
-filterLongWords()
+filterLongWords(words,5)

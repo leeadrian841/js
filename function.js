@@ -98,8 +98,6 @@ var words = ["hello", "what", "is", "up", "dude"]
 function findLongestWords(arr){
   var longestWordsLength = 0
   for (var i = 0; i < arr.length; i++){
-    arr[i]
-    arr[i].length
     if (longestWordsLength < arr[i].length){
       longestWordsLength = arr[i].length
     }

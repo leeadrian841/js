@@ -1,7 +1,7 @@
 // long1
 var words = ["hello", "what", "is", "up", "dude"]
 
-function lengths() {
+function lengths () {
   var arrlength = []
   for (var i = 0; i < words.length; i++) {
     var single = words[i].split(', ')
@@ -15,7 +15,7 @@ function lengths() {
 lengths(words)
 
 // long2
-function transmogrifier(a, b, c) {
+function transmogrifier (a, b, c) {
   var result = Math.pow((a * b), c)
   return result
 }
@@ -24,7 +24,7 @@ transmogrifier(13, 12, 5)
 transmogrifier(42, 13, 7)
 
 // long3
-function wordReverse(str) {
+function wordReverse (str) {
   var reversestr = str.split(' ').reverse().join(' ')
   return reversestr
 }
@@ -32,7 +32,7 @@ wordReverse("Now I know what a TV dinner feels like")
 wordReverse("Put Hans back on the line")
 
 // short1
-function maxofTwoNumbers(a, b) {
+function maxofTwoNumbers (a, b) {
   if (a > b) {
     return a
   } else {
@@ -42,7 +42,7 @@ function maxofTwoNumbers(a, b) {
 maxofTwoNumbers(7, 5)
 
 // short2
-function maxofThree(a, b, c) {
+function maxofThree (a, b, c) {
   if ((a > b) && (a > c)) {
     return a
   } else if (b > c) {
@@ -57,7 +57,7 @@ maxofThree(4, 1, 7)
 var isVowel
 var vowels = ['a', 'e', 'i', 'o', 'u']
 
-function isCharacterAVowel(str) {
+function isCharacterAVowel (str) {
   for (var i = 0; i < vowels.length; i++) {
     if (str === vowels[i]) {
       isVowel = true
@@ -70,22 +70,26 @@ function isCharacterAVowel(str) {
 isCharacterAVowel('s')
 
 // short4
-function sumArray([a,b,c,d]) {
+function sumArray ([a,b,c,d]) {
   var sum = a + b + c + d
   return sum
 }
 sumArray([1,2,3,4])
 
-function multiplyArray([a,b,c,d]) {
+function multiplyArray ([a,b,c,d]) {
   var product = a * b * c * d
   return product
 }
 multiplyArray([1,2,3,4])
 
 // short5
+function returnArg () {
+  return arguments.length
+}
+returnArg(4, 'we', 6, 'wth')
 
 // short6
-function reverseString(str) {
+function reverseString (str) {
   var rev = str.split('').reverse().join('')
   return rev
 }
@@ -109,7 +113,7 @@ findLongestWords(words)
 var result = false
 var words = ["hello", "what", "is", "up", "dude"]
 
-function filterLongWords(arr, x) {
+function filterLongWords (arr, x) {
   for (var i = 0; i < arr.length; i++) {
     if (arr[i].length > x) {
       return arr[i]
